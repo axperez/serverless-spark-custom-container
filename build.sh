@@ -1,3 +1,4 @@
+#!/bin/bash
 # Change with your project ID and imagine name/tag
 IMAGE=gcr.io/my-project/my-image:1.0.1
 gsutil cp gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.13-0.28.1.jar build/.
