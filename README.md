@@ -21,10 +21,7 @@ gcloud dataproc batches submit pyspark \
     --version 2.0 \
     --container-image us-docker.pkg.dev/my-project/serverless-spark/my-image:1.0.1 \
     --history-server-cluster projects/project-name/regions/us-central1/clusters/spark-phs \
-    --properties "spark.driver.cores=4,
-                  spark.dynamicAllocation.executorAllocationRatio=0.3,
-                  spark.executor.cores=4,
-                  spark.executor.instances=2" 
+    --properties "spark.driver.cores=4,spark.dynamicAllocation.executorAllocationRatio=0.3,spark.executor.cores=4,spark.executor.instances=2" 
 ```
 Interactive Session:
 ```bash
@@ -35,10 +32,7 @@ gcloud beta dataproc sessions create spark example-session-name  \
     --version 2.0 \
     --container-image us-docker.pkg.dev/my-project/serverless-spark/my-image:1.0.1 \
     --history-server-cluster projects/project-name/regions/us-central1/clusters/spark-phs \
-    --property "spark.driver.cores=4,
-                spark.dynamicAllocation.executorAllocationRatio=0.3,
-                spark.executor.cores=4,
-                spark.executor.instances=2"
+    --property "spark.driver.cores=4,spark.dynamicAllocation.executorAllocationRatio=0.3,spark.executor.cores=4,spark.executor.instances=2"
 
 ```
 
